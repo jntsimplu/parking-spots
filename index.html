@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <title>Parking Slots</title>
-</head>
-<body>
-    <div class="wrapper">
-        <button class="btn-buy"><i class="icon ion-checkmark"></i>Buy ticket</button>
-        <button class="btn-rej"><i class="icon ion-close"></i>Leave Park</button>
-        <img src="car.png" alt="car" class="car">
-        <img src="exit.png" alt="exit" class="exit">
-        
-        <div class="counter-box">
-            <span class="counter-text"> <a id="clicks">80</a> Locuri libere</span>
-        </div>
-        <script src="div.js"></script>
-    </div>
-    <script src="app.js"></script>
-</body>
-</htm
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+      <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+      <link type="text/css" rel="stylesheet" href="style.css">
+      <title>Parking Slots</title>
+   </head>
+   <body>
+      <div id="myModal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+            <div class="bg">
+               <span class="close">&times;</span>
+               <script src="app.js"></script>
+               <script src="div.js"></script>
+               <button class="btn-buy default_btn"><i class="icon ion-checkmark"></i>Buy ticket</button>
+               <button class="btn-rej default_btn"><i class="icon ion-close"></i>Leave Park</button>
+               <img src="car.png" alt="car" class="car">
+               <img src="exit.png" alt="exit" class="exit">
+               <div class="counter-box">
+                  <span class="counter-text"> <a id="clicks">80</a> Locuri libere</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <center>
+         <section class="text-center" id="frogger"></section>
+         <button id="myBtn" class="ticket-button">Open Modal</button>
+         <script src="js/resources.js"></script>
+         <script src="js/game.js"></script>
+         <script src="js/engine.js"></script>
+      </center>
+   </body>
+</html>
